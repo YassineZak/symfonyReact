@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
-import Callback from "./Callback";
+import Callback from "./CallBack";
 import SecuredRoute from "./SecuredRoute";
 import PrivateResources from "./privateResources";
 import PublicResources from "./publicResources";

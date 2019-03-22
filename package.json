@@ -1,7 +1,14 @@
 {
     "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-transform-runtime": "^7.4.0",
         "@babel/preset-react": "^7.0.0",
         "@symfony/webpack-encore": "^0.22.0",
+        "axios": "^0.18.0",
+        "react": "^16.8.5",
+        "react-dom": "^16.8.5",
+        "react-router-dom": "^5.0.0",
+        "reactstrap": "^7.1.0",
         "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
@@ -13,6 +20,8 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "auth0-js": "^9.10.1"
+        "@babel/runtime": "7.0.0-beta.55",
+        "auth0-js": "^9.10.1",
+        "core-js": "2"
     }
 }
