@@ -1,0 +1,4 @@
+jwt_auth:
+    domain: YOUR_AUTH0_DOMAIN
+    authorized_issuer: https://dev-86w0by13.eu.auth0.com
+    api_identifier: http://localhost:8000/api
