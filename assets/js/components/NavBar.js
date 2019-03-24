@@ -13,35 +13,27 @@ function NavBar(props) {
     };
 
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="#" className="navbar-brand"> Symfony React </a>
-            <div className="collapse navbar-collapse" id="navbarText">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
-                        <Link className={"nav-link"} to={"/"}>
-                            {
-                                !auth0Client.isAuthenticated() &&
-                                <button className="btn btn-dark" onClick={auth0Client.logIn}>Sign In</button>
-                            }
-                            {
-                                auth0Client.isAuthenticated() &&
-                                <div>
-                                    <label className="mr-2 text-white">{auth0Client.getProfile().name}</label>
-                                    <button className="btn btn-dark" onClick={() => {logOut()}}>Sign Out</button>
-                                </div>
-                            }
-                        </Link>
-
+        <nav>
+                <ul>
+                    <li >
+                        <Link className={"nav-link"} to={"/"}>PARIMIS</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className={"nav-link"} to={"/"}> Public Route </Link>
+                    <li>
+                        <Link className={"nav-link"} to={"/"}>Chambres</Link>
                     </li>
-
-                    <li className="nav-item">
-                        <Link className={"nav-link"} to={"/private"}> Protected Route </Link>
+                    <li>
+                        <Link className={"nav-link"} to={"/"}>Restaurant</Link>
+                    </li>
+                    <li>
+                        <Link className={"nav-link"} to={"/"}>Bien être</Link>
+                    </li>
+                    <li>
+                        <Link className={"nav-link"} to={"/"}>Avis</Link>
+                    </li>
+                    <li>
+                    <Link className={"nav-link"} to={"/"}>Reservation</Link>
                     </li>
                 </ul>
-            </div>
         </nav>
     )
 }

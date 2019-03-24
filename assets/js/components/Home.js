@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
+import ControlledCarousel from '../components/ControlledCarousel';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Callback from "./CallBack";
 import SecuredRoute from "./SecuredRoute";
@@ -31,6 +32,7 @@ class Home extends Component {
                     <SecuredRoute path={'/private'} component={PrivateResources}/>
                     <Route path={"/"} component={PublicResources} />
                 </Switch>
+
             </div>
         )
     }
