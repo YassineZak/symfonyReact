@@ -1,4 +1,5 @@
 var Encore = require('@symfony/webpack-encore');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 Encore
     .setOutputPath('public/build/')
@@ -14,6 +15,9 @@ Encore
     .enableSassLoader()
     .addEntry('home', './assets/css/sass/home.scss')
 
+    .addPlugin(new CopyWebpackPlugin([
+        { from: './assets/images', to: 'images' }
+    ]))
     .configureBabel(function (babelConfig) {
         babelConfig.plugins = [
             "@babel/plugin-proposal-object-rest-spread","@babel/plugin-proposal-class-properties",

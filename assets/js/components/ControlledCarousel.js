@@ -14,7 +14,7 @@ function Carousel(props) {
             description:
             'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
             button: 'Read More',
-            image: 'https://i.imgur.com/ZXBtVw7.jpg',
+            image: 'http://localhost:8080/build/images/slideshow1.jpg',
             user: 'Luan Gjokaj',
             userProfile: 'https://i.imgur.com/JSW6mEk.png'
         },
@@ -23,7 +23,7 @@ function Carousel(props) {
             description:
             'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
             button: 'Discover',
-            image: 'https://i.imgur.com/DCdBXcq.jpg',
+            image: 'http://localhost:8080/build/images/slideshow2.jpg',
             user: 'Erich Behrens',
             userProfile: 'https://i.imgur.com/0Clfnu7.png'
         },
@@ -48,17 +48,12 @@ function Carousel(props) {
                 className="slider-content"
                 style={{ background: `url('${item.image}') no-repeat center center` }}
             >
+                console.log(${item.image});
                 <div className="inner">
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>
                     <button>{item.button}</button>
                 </div>
-                <section>
-                    <img src={item.userProfile} alt={item.user} />
-                    <span>
-                        Posted by <strong>{item.user}</strong>
-                    </span>
-                </section>
             </div>
         ))}
     </Slider>
