@@ -16,7 +16,7 @@ function NavBar(props) {
         <nav>
                 <ul>
                     <li >
-                        <Link className={"nav-link"} to={"/"}>PARIMIS</Link>
+                        <Link className={"nav-link"} to={"/test"}>PARIMIS</Link>
                     </li>
                     <li>
                         <Link className={"nav-link"} to={"/"}>Chambres</Link>

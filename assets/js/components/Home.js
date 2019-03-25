@@ -2,13 +2,14 @@
 
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
-import ControlledCarousel from '../components/ControlledCarousel';
+import Carousel from '../components/ControlledCarousel';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Callback from "./CallBack";
 import SecuredRoute from "./SecuredRoute";
 import PrivateResources from "./privateResources";
 import PublicResources from "./publicResources";
 import auth0Client from '../utils/Auth';
+
 
 class Home extends Component {
 
@@ -27,6 +28,7 @@ class Home extends Component {
         return (
             <div>
                 <NavBar />
+                <Carousel />
                 <Switch>
                     <Route exact path={"/callback"} component={Callback} />
                     <SecuredRoute path={'/private'} component={PrivateResources}/>
