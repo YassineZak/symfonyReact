@@ -5,7 +5,7 @@ Encore
     .setOutputPath('public/build/')
     .setPublicPath('/build')
     .addEntry('app', './assets/js/app.js')
-    .addEntry('style', './assets/css/app.css')
+    .addEntry('slider', './assets/css/slider-animations.css')
     .enableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableBuildNotifications()

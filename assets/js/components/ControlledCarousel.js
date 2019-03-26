@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import 'normalize.css';
-import '../../css/slider-animations.css';
-import '../../css/styles.css';
+import 'normalize.css/normalize.css';
+//import '../../css/slider-animations.css';
+//import '../../css/styles.css';
 
 function Carousel(props) {
 
@@ -32,7 +32,7 @@ function Carousel(props) {
             description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
             button: 'Buy now',
-            image: 'https://i.imgur.com/DvmN8Hx.jpg',
+            image: 'http://localhost:8080/build/images/slideshow3.jpg',
             user: 'Bruno Vizovskyy',
             userProfile: 'https://i.imgur.com/4KeKvtH.png'
         }
@@ -41,14 +41,13 @@ function Carousel(props) {
 
 
     return(
-        <Slider className="slider-wrapper">
+        <Slider autoplay={3000} className="slider-wrapper" onSlideChange={event => console.log(event.slideIndex)}>
         {content.map((item, index) => (
             <div
                 key={index}
                 className="slider-content"
                 style={{ background: `url('${item.image}') no-repeat center center` }}
             >
-                console.log(${item.image});
                 <div className="inner">
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>

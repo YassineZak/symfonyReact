@@ -78,6 +78,10 @@ header {
 }
 nav {
   width: 90%;
+  z-index: 10000;
+  top: 0px;
+  position: absolute;
+  left: 100px;
   ul {
     display: flex;
     justify-content: space-between;
