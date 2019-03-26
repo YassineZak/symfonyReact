@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
     
-{% block title %} Symfony Auth0 API {% endblock %}
+{% block title %}{{ parent() }}- Accueil{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+{{ encore_entry_link_tags('slider') }}
+{% endblock %}
     
 {% block body %}
 <div>

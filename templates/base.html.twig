@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="FR-fr">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
+    <title>{% block title %}Parimis Hotel{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('home') }}
+    {% endblock %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
  </head>
 <body>
 {% block body %}{% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
+<script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
+<script
+        src="https://unpkg.com/react-dom/umd/react-dom.production.js"
+        crossorigin
+/>
+<script
+        src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+        crossorigin
+/>
+<script>var Alert = ReactBootstrap.Alert;</script>
 </body>
 </html>
