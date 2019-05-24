@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Carousel:
+          class: App\Entity\Carousel
+          label: 'Carousel Infos'
+          list:
+            fields: ['title', 'description', 'link', 'img']
+          form:
+            fields: ['title', 'description', 'link', { property: 'imgFile', type: 'file', label: "Fond d'ecran"}]

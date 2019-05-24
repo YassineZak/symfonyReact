@@ -9,8 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SecuredController extends AbstractController
 {
     /**
-     * @Route("/api/public", name="public")
-     * @return JsonResponse
+     * @Route("/test/test", name="public")
      */
     public function publicAction()
     {

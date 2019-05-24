@@ -11,8 +11,8 @@ class FetchResourcePrivate extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          privateResources: null,
-          isLoading: null
+            privateResources: null,
+            isLoading: null
         };
         this.fetchPrivateResources = this.fetchPrivateResources.bind(this);
     }
