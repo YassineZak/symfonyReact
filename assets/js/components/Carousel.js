@@ -23,9 +23,10 @@ class Carousel extends Component {
     
     fetchCarouselResources () {
             if(!this.state.carouselResources){
-                axios.get('http://localhost:8000/api/carousel').then(res => {
+                axios.get('http://127.0.0.1:8000/api/carousel').then(res => {
                         this.setState({carouselResources: res.data});
                     })
+                console.log(this.state)    
             }
     }
 

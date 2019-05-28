@@ -14,6 +14,12 @@ Encore
     .enableReactPreset()
     .enableSassLoader()
     .addEntry('home', './assets/css/sass/home.scss')
+    .autoProvidejQuery()
+    .autoProvideVariables({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+    })
 
     .addPlugin(new CopyWebpackPlugin([
         { from: './assets/images', to: 'images' }

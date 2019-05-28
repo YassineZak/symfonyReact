@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
-import CarouselComponent from '../components/Carousel';
+import Carousel from '../components/Carousel';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 
 class Home extends Component {
@@ -13,7 +13,7 @@ class Home extends Component {
         return (
             <div>
                 <NavBar />
-                <CarouselComponent />
+                <Carousel />
             </div>
         )
     }

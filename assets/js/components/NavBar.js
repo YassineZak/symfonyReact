@@ -19,7 +19,7 @@ function NavBar(props) {
                         <Link className={"nav-link"} to={"/test"}>PARIMIS</Link>
                     </li>
                     <li>
-                        <Link className={"nav-link"} to={"/"}>Chambres</Link>
+                        <Link className={"nav-link"} to={"/chambre"}>Chambres</Link>
                     </li>
                     <li>
                         <Link className={"nav-link"} to={"/"}>Restaurant</Link>
