@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Redirect, withRouter} from 'react-router-dom';
+import { Link, Redirect, withRouter} from 'react-router-dom';
 import Slider from 'react-animated-slider';
 import axios from 'axios';
 import 'react-animated-slider/build/horizontal.css';
@@ -53,7 +53,7 @@ class Carousel extends Component {
             <div className="inner">
                     <h1>{data.title}</h1>
                     <p>{data.description}</p>
-                    <a href ={data.link}><button>{data.link}</button></a>
+                    <Link className=" btn btn-warning"to={data.link}>Découvrir</Link>
                 </div>
                 </div>
             )}
