@@ -8,3 +8,10 @@ easy_admin:
             fields: ['title', 'description', 'link', 'img']
           form:
             fields: ['title', 'description', 'link', { property: 'imgFile', type: 'file', label: "Fond d'ecran"}]
+        WidgetBlock:
+          class: App\Entity\WidgetBlock
+          label: 'Widget Block Infos'
+          list:
+            fields: ['blockTitle', 'linkTitle', 'img']
+          form:
+            fields: ['blockTitle', 'linkTitle', 'linkUrl', { property: 'imgFile', type: 'file', label: "Fond d'ecran du block"}]   
