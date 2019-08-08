@@ -30,7 +30,8 @@ class WidgetBlock extends Component {
 
     render() {
         return (
-            <Fragment>
+
+        <Fragment>
             <section id="parimisRestoSpaActu" >
             {this.state.widgetBlockResources && this.state.widgetBlockResources.slice(0,3).map((data, index)=>
                 <div className="actualite" key={index}>
@@ -38,13 +39,25 @@ class WidgetBlock extends Component {
                     <div className="effet_montant">
                         <div className="text_parimis_actualite">
                             <span>{this.capitalizeFirstLetter(data.blockTitle)}</span>
-                            <p><a href={data.linkUrl}>{data.linkTitle} </a></p>
+                            <p><a href={data.linkUrl}>{data.linkTitle}</a></p>
                         </div>
                     </div>
                 </div>
             )}
             </section>
-            </Fragment>
+            {this.state.widgetBlockResources && this.state.widgetBlockResources.slice(3,4).map((data, index)=>
+            <section id="parimis_suite">
+                <div class="parimis_suite">
+                    <img src={`http://localhost:8080/build/images/${data.img}`} alt="parimis_suite" />
+                    <div class="effetMontant">
+                        <div class="textEffet">
+                            <a href={data.linkUrl}>{data.linkTitle}</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            )}
+        </Fragment>
         )
     }
 }
