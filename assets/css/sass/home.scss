@@ -448,7 +448,7 @@ footer {
   background-color: $color_outer_space_approx;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   font-family: $font_0, $font_2;
   color: $color_bombay_approx;
