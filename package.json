@@ -4,7 +4,7 @@
         "@babel/plugin-transform-runtime": "^7.4.0",
         "@babel/preset-react": "^7.0.0",
         "@symfony/webpack-encore": "^0.22.0",
-        "axios": "^0.18.0",
+        "axios": "^0.18.1",
         "node-sass": "^4.11.0",
         "react": "^16.8.5",
         "react-animated-slider": "^1.1.4",
