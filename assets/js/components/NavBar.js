@@ -16,22 +16,22 @@ function NavBar(props) {
         <nav>
                 <ul>
                     <li >
-                        <Link className={"nav-link"} to={"/test"}>PARIMIS</Link>
+                        <Link className={"nav-link"} to={"/home"}>PARIMIS</Link>
                     </li>
                     <li>
                         <Link className={"nav-link"} to={"/chambre"}>Chambres</Link>
                     </li>
                     <li>
-                        <Link className={"nav-link"} to={"/"}>Restaurant</Link>
+                        <Link className={"nav-link"} to={"/restaurant"}>Restaurant</Link>
                     </li>
                     <li>
-                        <Link className={"nav-link"} to={"/"}>Bien être</Link>
+                        <Link className={"nav-link"} to={"/spa"}>Bien être</Link>
                     </li>
                     <li>
-                        <Link className={"nav-link"} to={"/"}>Avis</Link>
+                        <Link className={"nav-link"} to={"/avis"}>Avis</Link>
                     </li>
                     <li>
-                    <Link className={"nav-link"} to={"/"}>Reservation</Link>
+                    <Link className={"nav-link"} to={"/reservation"}>Reservation</Link>
                     </li>
                 </ul>
         </nav>
