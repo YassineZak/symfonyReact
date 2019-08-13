@@ -4,14 +4,31 @@ easy_admin:
         Carousel:
           class: App\Entity\Carousel
           label: 'Carousel Infos'
+          new:
+            title: 'Carousel Widget'
           list:
-            fields: ['title', 'description', 'link', 'img']
+            title: 'Carousel Widget'
+            fields: 
+                    - { property: 'title', label: 'Titre'}
+                    - { property: 'description', label: 'Description'}
+                    - { property: 'img', label: 'aperçu', type: 'image', base_path: "http://localhost:8080/build/images"}
+            actions:
+            - { name: 'new', label: 'Ajouter'}
+            - { name: 'edit', label: 'Editer'}
+            - { name: 'delete', label: 'Supprimer'}
+            - { name: 'search', label: 'Rechercher'}
           form:
             fields: ['title', 'description', 'link', { property: 'imgFile', type: 'file', label: "Fond d'ecran"}]
         WidgetBlock:
           class: App\Entity\WidgetBlock
           label: 'Widget Block Infos'
           list:
+            title: 'Widget Block'
             fields: ['blockTitle', 'linkTitle', 'img']
+            actions:
+            - { name: 'new', label: 'Ajouter'}
+            - { name: 'edit', label: 'Editer'}
+            - { name: 'delete', label: 'Supprimer'}
+            - { name: 'search', label: 'Rechercher'}
           form:
             fields: ['blockTitle', 'linkTitle', 'linkUrl', { property: 'imgFile', type: 'file', label: "Fond d'ecran du block"}]   
