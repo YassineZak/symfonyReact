@@ -2,21 +2,16 @@
 
 import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
-import auth0Client from '../utils/Auth';
 
 
 function NavBar(props) {
 
-    const logOut = () => {
-        auth0Client.logOut();
-        props.history.replace('/');
-    };
 
     return(
         <nav>
                 <ul>
                     <li >
-                        <Link className={"nav-link"} to={"/home"}>PARIMIS</Link>
+                        <Link className={"nav-link"} to={"/"}>PARIMIS</Link>
                     </li>
                     <li>
                         <Link className={"nav-link"} to={"/chambre"}>Chambres</Link>

@@ -14,6 +14,7 @@ Encore
     .enableReactPreset()
     .enableSassLoader()
     .addEntry('home', './assets/css/sass/home.scss')
+    .addEntry('chambre', './assets/css/parimis/style_chambres.css')
     .autoProvidejQuery()
     .autoProvideVariables({
         $: 'jquery',
