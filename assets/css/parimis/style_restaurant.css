@@ -1,6 +1,9 @@
 body{
   margin: 0;
 }
+.mainRestaurant{
+  margin-top: 145px;
+}
 header{
   position: relative;
   top: 0px;
@@ -132,7 +135,7 @@ h1{
   color: rgba(244, 117, 142, 0.8);
   font-size: 30px;
 }
-section{
+.mainRestaurant section{
   width: 95%;
   margin: auto;
   margin-top: 40px;
@@ -145,19 +148,19 @@ section{
   -moz-box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
   box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
 }
-section h2{
+.mainRestaurant section h2{
   color: rgba(244, 117, 142, 0.8);
   font-size: 30px;
   padding: 28px;
   text-align: center;
   padding-top: 8px;
 }
-section p{
+.mainRestaurant section p{
   clear: both;
   padding: 10px;
   line-height: 24pt;
 }
-section img{
+.mainRestaurant section img{
   -webkit-box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
   -moz-box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
   box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
@@ -181,7 +184,7 @@ h4{
   text-align: center;
   margin: auto;
 }
-section a:not(.lien){
+.mainRestaurant section a:not(.lien){
   margin-left: 46%;
   border: 3px solid rgba(244, 117, 142, 0.8);
   padding: 10px 20px;
@@ -198,7 +201,7 @@ section a:not(.lien){
   width: 20%;
   text-align: center;
 }
-section a:hover{
+.mainRestaurant section a:hover{
   background: rgba(244, 117, 142, 1);
   color: white;
 }
@@ -257,8 +260,9 @@ cursor: pointer;
     margin: auto;
     width: 100%;
   }
-  section a:not(.lien){
+  .mainRestaurant section a:not(.lien){
     margin-left: 46%;
+}
 }
 /************* menu hamburger *****/
 html, body{
@@ -362,13 +366,13 @@ html, body{
     color: rgba(244, 117, 142, 0.8);
     font-size: 30px;
   }
-  section h2{
+  .mainRestaurant section h2{
     font-size: 24px;
     padding: 15px;
     text-align: center;
     padding-top: 8px;
   }
-  section p{
+  .mainRestaurant section p{
     clear: both;
     padding: 5px;
     line-height: 20pt;
@@ -380,7 +384,7 @@ html, body{
   height: 220px;
     margin-left: auto;
   }
-  section a:not(.lien){
+  .mainRestaurant section a:not(.lien){
     width: 100%;
     border: 3px solid rgba(244, 117, 142, 0.8);
     padding: 10px 20px;
@@ -390,7 +394,7 @@ html, body{
     margin-left: auto;
     text-align: center;
   }
-  section a:hover{
+  .mainRestaurant section a:hover{
     background: rgba(244, 117, 142, 1);
     color: white;
   }

@@ -15,6 +15,7 @@ Encore
     .enableSassLoader()
     .addEntry('home', './assets/css/sass/home.scss')
     .addEntry('chambre', './assets/css/parimis/style_chambres.css')
+    .addEntry('restaurant', './assets/css/parimis/style_restaurant.css')
     .autoProvidejQuery()
     .autoProvideVariables({
         $: 'jquery',
