@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
 import NavBar from '../components/NavBar'
-require('../../css/parimis/style_chambres.css')
 
 const Chambre = () => {
   return (

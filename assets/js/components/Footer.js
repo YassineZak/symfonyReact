@@ -29,7 +29,7 @@ const Footer = () => {
                 <li><a href="html/plan_du_site.html">Plan du site</a></li>
                 <li>Inscrivez vous à notre newsletter</li>
             </ul>
-            <p><i className="fa fa-facebook-official" aria-hidden="true"></i><i className="fa fa-twitter" aria-hidden="true"></i><i className="fa fa-tripadvisor" aria-hidden="true"></i><i class="fa fa-google-plus" aria-hidden="true"></i></p>
+            <p><i className="fa fa-facebook-official" aria-hidden="true"></i><i className="fa fa-twitter" aria-hidden="true"></i><i className="fa fa-tripadvisor" aria-hidden="true"></i><i className="fa fa-google-plus" aria-hidden="true"></i></p>
         </div>
     </footer>
     );
