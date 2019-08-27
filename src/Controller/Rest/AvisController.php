@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
-use App\Form\Type\AvisType;
 use FOS\RestBundle\View\View;
 
 class AvisController extends FOSRestController
@@ -21,10 +20,6 @@ class AvisController extends FOSRestController
     {
         
         $avis = new ParimisAvis();
-        $form = $this->createForm(AvisType::class, null, [
-            'csrf_protection' => false,
-        ]);
-        $avisPost = $form->getData();
         $avis->setPseudo($request->get('pseudo'));
         $avis->setNote($request->get('note'));
         $avis->setAvisTitre($request->get('avisTitre'));

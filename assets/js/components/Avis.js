@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import FormAvis from '../components/FormAvis';
-import axios from 'axios';
 
 
 export default class Avis extends Component {
 
     handleSubmit = (data)=> {
-        console.log(data)
         this.avisPost(data)
-    }
+}
 
     avisPost = (data) => {
-        console.log(data)
-        axios.post(`http://127.0.0.1:8000/api/avis/post`, { data })
-        .then(res => {
+        fetch('http://127.0.0.1:8000/api/avis/post', {
+        method: 'POST',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+        }).then(res => {
         console.log(res);
-        console.log(res.data);
-        })
+        }).catch(err => err);
     }
 
     render() {

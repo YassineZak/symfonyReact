@@ -18,6 +18,7 @@ class WidgetBlock extends Component {
     fetchwidgetblockResources (){
         if(!this.state.widgetBlockResources){
             axios.get('http://127.0.0.1:8000/api/widgetblock').then(res => {
+                    console.log(res.data)
                     this.setState({widgetBlockResources: res.data});
                 })  
         }
@@ -36,8 +37,8 @@ class WidgetBlock extends Component {
                     <img src= {`http://localhost:8080/build/images/${data.img}`} alt="parimis_actualite"/>
                     <div className="effet_montant">
                         <div className="text_parimis_actualite">
-                            <span>{this.capitalizeFirstLetter(data.block_title)}</span>
-                            <p><Link className={"nav-link"} to={`/${data.link_url}`}>{data.link_title}</Link></p>
+                            <span>{data.blockTitle}</span>
+                            <p><Link className={"nav-link"} to={`/${data.linkUrl}`}>{data.linkTitle}</Link></p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +50,7 @@ class WidgetBlock extends Component {
                     <img src={`http://localhost:8080/build/images/${data.img}`} alt="parimis_suite" />
                     <div className="effetMontant">
                         <div className="textEffet">
-                            <Link className={"nav-link"} to={`/${data.link_url}`}>{data.link_title}</Link>
+                            <Link className={"nav-link"} to={`/${data.linkUrl}`}>{data.linkTitle}</Link>
                         </div>
                     </div>
                 </div>
