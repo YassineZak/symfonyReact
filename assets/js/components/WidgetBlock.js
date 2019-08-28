@@ -18,8 +18,8 @@ class WidgetBlock extends Component {
     fetchwidgetblockResources (){
         if(!this.state.widgetBlockResources){
             axios.get('http://127.0.0.1:8000/api/widgetblock').then(res => {
+                    console.log(res.data)
                     this.setState({widgetBlockResources: res.data});
-                    console.log(res)
                 })  
         }
     }
@@ -34,11 +34,10 @@ class WidgetBlock extends Component {
             <section id="parimisRestoSpaActu" >
             {this.state.widgetBlockResources && this.state.widgetBlockResources.slice(0,3).map((data, index)=>
                 <div className="actualite" key={index}>
-                {console.log(data)}
                     <img src= {`http://localhost:8080/build/images/${data.img}`} alt="parimis_actualite"/>
                     <div className="effet_montant">
                         <div className="text_parimis_actualite">
-                            <span>{this.capitalizeFirstLetter(data.blockTitle)}</span>
+                            <span>{data.blockTitle}</span>
                             <p><Link className={"nav-link"} to={`/${data.linkUrl}`}>{data.linkTitle}</Link></p>
                         </div>
                     </div>
