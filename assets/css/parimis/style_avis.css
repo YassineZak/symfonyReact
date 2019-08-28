@@ -136,14 +136,14 @@ h1{
 .avisparimis{
   margin-left:auto;
 }
-section h2{
+.avisMain section h2{
   color: rgba(244, 117, 142, 0.8);
   font-size: 30px;
   padding: 28px;
   text-align: center;
   padding-top: 8px;
 }
-section p{
+.avisMain section p{
   clear: both;
   padding: 10px;
   line-height: 24pt;
@@ -152,11 +152,10 @@ section p{
   margin-left: -90%;
   margin-top: 30px;
 }
-section img{
+.avisMain section img{
   -webkit-box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
   -moz-box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
   box-shadow: -1px 0px 15px 10px rgba(0,0,0,0.58);
-  margin-left: 15%;
   width: 70%;
 }
 h3{
@@ -184,7 +183,7 @@ h3{
   padding: 5px;
   margin-top: 4%;
 }
-h3 i{
+.avisMain i{
   color: #ffc300;
 }
 article p i {
@@ -198,13 +197,7 @@ h4{
 br{
   line-height: 40pt;
 }
-label{
-  width: : 150px;
-  display: block;
-  float: left;
-  margin-left: 30%;
 
-}
 .prix{
   display: inline;
   margin-left: 20px;
@@ -252,7 +245,7 @@ textarea{
   text-align: center;
   margin: auto;
 }
-section a:not(.lien){
+.avisMain section a:not(.lien){
   margin-left: 46%;
   border: 3px solid rgba(244, 117, 142, 0.8);
   padding: 10px 20px;
@@ -272,7 +265,7 @@ section a:not(.lien){
   width: 20%;
   text-align: center;
 }
-section a:hover{
+.avisMain section a:hover{
   background: rgba(244, 117, 142, 1);
   color: white;
 }
@@ -365,7 +358,7 @@ html, body{
   #toggle_btn{
     display: block;
   }
-  section img{
+  .avisMain section img{
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
@@ -427,13 +420,13 @@ html, body{
     color: rgba(244, 117, 142, 0.8);
     font-size: 30px;
   }
-  section h2{
+  .avisMain section h2{
     font-size: 24px;
     padding: 15px;
     text-align: center;
     padding-top: 8px;
   }
-  section p{
+  .avisMain section p{
     clear: both;
     padding: 5px;
     line-height: 20pt;
@@ -441,7 +434,7 @@ html, body{
 
   }
 
-  section a:not(.lien){
+  .avisMain section a:not(.lien){
     width: 100%;
     border: 3px solid rgba(244, 117, 142, 0.8);
     padding: 10px 20px;
@@ -451,7 +444,7 @@ html, body{
     margin-left: auto;
     text-align: center;
   }
-  section a:hover{
+  .avisMain section a:hover{
     background: rgba(244, 117, 142, 1);
     color: white;
   }
@@ -474,13 +467,13 @@ html, body{
   margin-left: 20px;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
   }
   main{
     margin-bottom: 0px;
   }
-  #avis1,#avis2,#avis3,#avis4,#avis5{
+  #avis1,#avis2,#avis3,#avis4,#avis5,#formAvis{
     width: 100%;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
   -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
@@ -488,10 +481,20 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
   margin: 0;
   padding: 0;
   }
+  #formAvis{
+    width: 100%;
+    border: 3px solid rgba(244, 117, 142, 0.8);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(244, 117, 142, 1);
+    width: 20%;
+    margin-left: auto;
+    text-align: center;
+  }
   .reservez{
       margin: 20px auto;
   }
-  section{
+  .avisMain section{
     border: 1px solid white;
   -webkit-box-shadow: 0px 0px 0px 0px rgb(0,0,0);
   -moz-box-shadow: 0px 0px 0px 0px rgb(0,0,0);
@@ -558,7 +561,7 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
   .reservez{
       margin: 20px auto;
   }
-  section{
+  .avisMain section{
     border: 1px solid white;
   -webkit-box-shadow: 0px 0px 0px 0px rgb(0,0,0);
   -moz-box-shadow: 0px 0px 0px 0px rgb(0,0,0);
@@ -576,4 +579,7 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.58);
     color: white;
     font-family: 'Philosopher', cursive;
   }
+}
+.avisMain{
+  margin-top: 145px;
 }

@@ -35,6 +35,8 @@
         "normalize.css": "^8.0.1",
         "nuka-carousel": "^4.5.3",
         "react-bootstrap": "^1.0.0-beta.6",
+        "react-rater": "^5.1.0",
+        "react-rating": "^1.7.2",
         "sass": "^1.17.3",
         "sass-loader": "^7.0.1"
     }
