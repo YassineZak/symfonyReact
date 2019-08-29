@@ -4,7 +4,7 @@
         render() {
             return (
                 <Fragment>
-                <h2>Avis de la clientéle</h2>
+                <h2 id="AvisClient">Avis de la clientéle</h2>
                 <article id="avis1">
                 <h3>Danielle P <i className="fa fa-star-o" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i></h3>
                 <div className="items">

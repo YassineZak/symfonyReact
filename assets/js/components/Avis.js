@@ -3,6 +3,7 @@ import FormAvis from '../components/FormAvis'
 import NavBar from '../components/NavBar'
 import PostedAvis from '../components/PostedAvis'
 import Footer from '../components/Footer'
+import { goToAnchor } from 'react-scrollable-anchor'
 
 
 export default class Avis extends Component {
@@ -28,10 +29,10 @@ export default class Avis extends Component {
         this.setState({
             formSubmit: true
         })
+        goToAnchor('AvisClient')
         })
         .catch(err => err);
     }
-
     render() {
             return (
                 <Fragment>
