@@ -1,6 +1,9 @@
 body{
   margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 header{
   position: relative;
   top: 0px;
