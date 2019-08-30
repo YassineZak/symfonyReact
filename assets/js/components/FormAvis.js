@@ -8,7 +8,8 @@ export default class FormAvis extends Component {
         pseudo: "",
         note: 1,
         avisTitre: "",
-        commentaire: ""
+        commentaire: "",
+        count: 0
     }
 
     handleSubmit = (e)=> {
@@ -38,10 +39,10 @@ export default class FormAvis extends Component {
             pseudo: e.target.value
         });
     }
-        handleRatingChangenote = (rating)  => {
-            this.setState({...this.state,  note: rating })
-            }
-
+    handleRatingChangenote = (rating)  => {
+        this.setState({...this.state,  note: rating 
+        })
+    }
     render() {
         return (
         <div className="container">

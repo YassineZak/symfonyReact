@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import {Link, withRouter} from 'react-router-dom'
-
 import axios from 'axios';
 
 class WidgetBlock extends Component {
@@ -11,7 +10,6 @@ class WidgetBlock extends Component {
 
     componentWillMount(){
         this.fetchwidgetblockResources();
-        console.log(this.state.widgetBlockResources);
         
     }
 

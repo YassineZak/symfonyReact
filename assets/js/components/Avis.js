@@ -9,12 +9,14 @@ import { goToAnchor } from 'react-scrollable-anchor'
 export default class Avis extends Component {
 
     state = {
-        formSubmit: false
+        formSubmit: false,
+        avisResources: null
     }
 
     handleSubmit = (data)=> {
         this.avisPost(data)
     }
+    
 
     avisPost = (data) => {
         fetch('http://127.0.0.1:8000/api/avis/post', {
@@ -32,6 +34,10 @@ export default class Avis extends Component {
         goToAnchor('AvisClient')
         })
         .catch(err => err);
+    }
+
+    avisGet = () => {
+
     }
     render() {
             return (
