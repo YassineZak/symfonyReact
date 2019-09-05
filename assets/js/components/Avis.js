@@ -10,7 +10,8 @@ export default class Avis extends Component {
 
     state = {
         formSubmit: false,
-        avisResources: null
+        avisResources: null,
+        count: 0
     }
 
     handleSubmit = (data)=> {
@@ -29,7 +30,8 @@ export default class Avis extends Component {
         })
         .then(res => {
         this.setState({
-            formSubmit: true
+            formSubmit: true,
+            count: this.state.count + 1 
         })
         goToAnchor('AvisClient')
         })
@@ -49,7 +51,7 @@ export default class Avis extends Component {
                             <p>
                                 <img className="avisparimis" src="http://localhost:8080/build/images/parimis_avis2.jpg" alt="PARIMIS avis"/>
                             </p>
-                            <PostedAvis />
+                            <PostedAvis count={this.state.count}/>
                             {this.state.formSubmit? null : <FormAvis onSubmit={this.handleSubmit}></FormAvis> }
                         </section>
                     </main>

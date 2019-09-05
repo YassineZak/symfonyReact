@@ -8,13 +8,14 @@ export default class FormAvis extends Component {
         pseudo: "",
         note: 1,
         avisTitre: "",
-        commentaire: "",
-        count: 0
+        commentaire: ""
     }
 
     handleSubmit = (e)=> {
         e.preventDefault();
-        this.props.onSubmit(this.state);
+        if(valideValue(this.setState.commentaire) && valideValue(this.setState.pseudo) && valideValue(this.setState.avisTitre)){
+            this.props.onSubmit(this.state);
+        }
         
     }
 
@@ -43,6 +44,13 @@ export default class FormAvis extends Component {
         this.setState({...this.state,  note: rating 
         })
     }
+    valideValue(value){
+        if (str.replace(/\s/g, '').length){
+            return true
+        }else{
+            return false
+        }
+    }
     render() {
         return (
         <div className="container">
@@ -66,6 +74,7 @@ export default class FormAvis extends Component {
                                     placeholder="Pseudo..."
                                     value={this.state.pseudo}
                                     onChange={this.handlePseudoChange}
+                                    required
                                     className="form-control"/>
                                 </div>
                             </div>
@@ -89,6 +98,7 @@ export default class FormAvis extends Component {
                                             placeholder="Titre..."
                                             value={this.state.title}
                                             onChange={this.handleTitleChange}
+                                            required
                                             className="form-control"/>
                                 </div>
                 </div>
@@ -96,6 +106,7 @@ export default class FormAvis extends Component {
                     <label className="col-sm-2 control-label  " htmlFor="blog_post_body" >Commentaire</label>
                     <div className="col-sm-8 offset-2">
                         <textarea  type="text"
+                                required
                                 id="blog_post_body"
                                 placeholder="Commentaire..."
                                 value={this.state.body}
