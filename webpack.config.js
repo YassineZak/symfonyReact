@@ -17,6 +17,7 @@ Encore
     .addEntry('chambre', './assets/css/parimis/style_chambres.css')
     .addEntry('restaurant', './assets/css/parimis/style_restaurant.css')
     .addEntry('avis', './assets/css/parimis/style_avis.css')
+    .addEntry('reservation', './assets/css/parimis/style_reservation.css')
     .autoProvidejQuery()
     .autoProvideVariables({
         $: 'jquery',

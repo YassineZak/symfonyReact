@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Chambre from './components/Chambre';
 import Restaurant from './components/Restaurant';
 import Avis from './components/Avis'
+import Reservation from './components/Reservation'
 require('../css/app.css');
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
             <Route exact path='/chambre' component={Chambre}></Route>
             <Route exact path='/restaurant' component={Restaurant}></Route>
             <Route exact path='/avis' component={Avis}></Route>
+            <Route exact path='/reservation' component={Reservation}></Route>
         </Switch>
     </BrowserRouter>
 )
