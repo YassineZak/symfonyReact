@@ -38,9 +38,6 @@ export default class Avis extends Component {
         .catch(err => err);
     }
 
-    avisGet = () => {
-
-    }
     render() {
             return (
                 <Fragment>
